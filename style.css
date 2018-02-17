@@ -1,5 +1,65 @@
+/* General Settings */
 body {
   margin: 0;
   font-family: Verdana, Helvetica, sans-serif, "Times New Roman";
-  font-size: 110%;
+  font-size: 100%;
+  line-height: 1.5;
 }
+
+
+/* Header Settings */
+header {
+  height: 100vh;
+  display: block;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  background: url("img/header.jpeg");
+  opacity: 0.4;
+  top: 0; left: 0; bottom: 0; right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+header #logo {
+  display: block;
+  width: 75px;
+  padding-top: 10px;
+  margin: auto;
+}
+
+header h1 {
+  text-align: center;
+  color: #555;
+  padding: 0, 10%;
+}
+
+
+/* Summary and Details */
+header details summary{
+  background-color: #000;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  width: 90px;
+  margin: auto;
+  font-weight: bolder;
+}
+
+header details summary::-webkit-details-marker {
+  display:none;
+}
+
+header details summary:hover{
+  color: #000;
+  background-color: #aaa;
+}
+
+header details{
+  color: #555;
+  padding: 5px;
+}
+
+/* */

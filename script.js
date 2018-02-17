@@ -1,1 +1,1 @@
-document.getElementsByTagName("header").innerHTML = "Header"
+document.getElementsByTagName("h1").innerHTML = "header";
