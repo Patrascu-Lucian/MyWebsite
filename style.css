@@ -17,7 +17,7 @@ header {
 header::after {
   content: "";
   background: url("img/header.jpeg");
-  opacity: 0.4;
+  opacity: 0.5;
   top: 0; left: 0; bottom: 0; right: 0;
   position: absolute;
   z-index: -1;
@@ -32,8 +32,9 @@ header #logo {
 
 header h1 {
   text-align: center;
-  color: #555;
-  padding: 0, 10%;
+  color: #333;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 
@@ -58,7 +59,7 @@ header details summary:hover{
 }
 
 header details{
-  color: #555;
+  color: #333;
   padding: 5px;
 }
 
