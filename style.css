@@ -46,13 +46,11 @@ header h1 {
   position: absolute;
   white-space: nowrap;
   /* centering */
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 #see-more a {
     color: #7C88B4;
-    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     text-decoration: none;
 }
@@ -66,7 +64,7 @@ header h1 {
   font-size: 125%;
 }
 
-#expertise h1 {
+#expertise h2 {
   border-bottom: 3px solid #7C88B4;
 }
 
@@ -90,7 +88,7 @@ header h1 {
   width: 100%;
 }
 
-#portfolio h1 {
+#portfolio h2 {
   border-bottom: 3px solid #7C88B4;
 }
 
@@ -109,9 +107,8 @@ header h1 {
 }
 
 #portfolio li img {
-  -webkit-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
-  width: 300px;
+  width: 250px;
   max-height: 150px;
   opacity: .7;
   border-radius: 10px;
@@ -122,7 +119,7 @@ header h1 {
 }
 
 /* ================================== Contact =================================*/
-#contact h1{
+#contact h2{
     border-bottom: 3px solid white;
     margin: 0;
     padding-top: 15px;
