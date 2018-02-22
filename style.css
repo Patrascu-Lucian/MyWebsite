@@ -45,9 +45,7 @@ header h1 {
   padding: 20px;
   position: absolute;
   white-space: nowrap;
-  z-index: 2;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
+  /* centering */
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
@@ -61,11 +59,6 @@ header h1 {
 
 #see-more a:hover {
   color: white;
-}
-
-#a[#expertise]{
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
 }
 
 /* ============================== Expertise ============================== */
@@ -96,10 +89,10 @@ header h1 {
 }
 
 #portfolio li img {
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  max-width: 100%;
-  opacity: 0.5;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  width: 100%;
+  opacity: .5;
 }
 
 #portfolio li img:hover {
@@ -117,8 +110,8 @@ header h1 {
     padding-top: 15px;
 }
 #contact {
-  background: #1D2C63;
-  color: white;
+  background: #7C88B4;
+  color: black;
 }
 
 #contact p {
@@ -151,7 +144,11 @@ footer {
     z-index: -1;
   }
 
+  #see-more {
+    font-size: 175%;
+  }
+
   #portfolio li img {
-    width: 500px;
+    width: 400px;
   }
 }
