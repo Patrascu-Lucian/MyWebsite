@@ -1,4 +1,4 @@
-/* Global Settings */
+/* ============================== Global ============================== */
 body {
   margin: 0;
   font: 100%/1.5 Arial, Verdana, Helvetica, sans-serif, "Times New Roman";
@@ -17,7 +17,7 @@ a {
 ul {
   padding: 0;
 }
-/* Header Settings */
+/* ============================== Header ============================= */
 header {
   background: #333;
   min-height: 100vh;
@@ -40,20 +40,20 @@ header h1 {
   bottom: 2.5%;
   display: inline-block;
   font-size: 135%;
+  font-weight: bold;
   left: 50%;
   padding: 20px;
-  color: #7C88B4;
   position: absolute;
   white-space: nowrap;
   z-index: 2;
-  text-decoration: none;
   -webkit-transition: color 0.2s ease-out;
   transition: color 0.2s ease-out;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+
 #see-more a {
-    color: #5EA4F7;
+    color: #7C88B4;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     text-decoration: none;
@@ -63,9 +63,14 @@ header h1 {
   color: white;
 }
 
-/* Expertise Settings */
+#a[#expertise]{
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+/* ============================== Expertise ============================== */
 #expertise h1 {
-  border-bottom: 5px solid #7C88B4;
+  border-bottom: 3px solid #7C88B4;
 }
 
 #expertise img {
@@ -75,14 +80,15 @@ header h1 {
   padding: 2vh 2vw;
 }
 
-/* Portfolio Settings */
-#portfolio h1 {
-  border-bottom: 5px solid #7C88B4;
-}
+/* ============================== Portfolio ============================== */
 
 #portfolio {
   background: #333;
   color: white;
+}
+
+#portfolio h1 {
+  border-bottom: 3px solid #7C88B4;
 }
 
 #portfolio li {
@@ -90,10 +96,10 @@ header h1 {
 }
 
 #portfolio li img {
-  width: 300px;
-  opacity: 0.5;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  max-width: 100%;
+  opacity: 0.5;
 }
 
 #portfolio li img:hover {
@@ -105,16 +111,21 @@ header h1 {
 }
 
 /* Contact */
+#contact h1{
+    border-bottom: 3px solid white;
+    margin: 0;
+    padding-top: 15px;
+}
 #contact {
   background: #1D2C63;
   color: white;
 }
 
 #contact p {
-  padding: 50px 0;
+  padding: 25px 0;
 }
 
-/* Footer Settings */
+/* ============================== Footer ============================== */
 footer {
   background: black;
   font-size: 75%;
@@ -122,7 +133,7 @@ footer {
   padding: 50px 0;
 }
 
-/* Media query */
+/* ============================== Media query ==============================*/
 @media (min-width: 768px) {
 
   header{
@@ -138,5 +149,9 @@ footer {
     top: 0; left: 0; bottom: 0; right: 0;
     position: absolute;
     z-index: -1;
+  }
+
+  #portfolio li img {
+    width: 500px;
   }
 }
