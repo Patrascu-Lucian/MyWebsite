@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font: 100%/1.5 Arial, Verdana, Helvetica, sans-serif, "Times New Roman";
+  background: #e5e5e5;
 }
 
 .container {
@@ -42,7 +43,6 @@ header h1 {
   font-size: 135%;
   font-weight: bold;
   left: 50%;
-  padding: 20px;
   position: absolute;
   white-space: nowrap;
   /* centering */
@@ -80,30 +80,42 @@ header h1 {
   color: white;
 }
 
+#portfolio ul {
+  width: 100%;
+}
+
 #portfolio h1 {
   border-bottom: 3px solid #7C88B4;
 }
 
+#portfolio h3, p {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+}
+
 #portfolio li {
+  display: inline-block;
   list-style: none;
+  padding: 15px;
+  vertical-align: top;
 }
 
 #portfolio li img {
   -webkit-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
-  width: 100%;
-  opacity: .5;
+  width: 300px;
+  max-height: 150px;
+  opacity: .7;
+  border-radius: 10px;
 }
 
 #portfolio li img:hover {
   opacity: 1;
 }
 
-#portfolio li a {
-  color: white;
-}
-
-/* Contact */
+/* ================================== Contact =================================*/
 #contact h1{
     border-bottom: 3px solid white;
     margin: 0;
@@ -111,11 +123,11 @@ header h1 {
 }
 #contact {
   background: #7C88B4;
-  color: black;
+  color: #333;
 }
 
 #contact p {
-  padding: 25px 0;
+  padding: 35px 0;
 }
 
 /* ============================== Footer ============================== */
@@ -138,7 +150,7 @@ footer {
   header:after {
     content: "";
     background: url("img/header.jpg");
-    opacity: 0.7;
+    opacity: 0.5;
     top: 0; left: 0; bottom: 0; right: 0;
     position: absolute;
     z-index: -1;
@@ -149,6 +161,6 @@ footer {
   }
 
   #portfolio li img {
-    width: 400px;
+    width: 300px;
   }
 }
