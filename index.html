@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Patrascu Lucian</title>
+    <title>Patrascu Lucian | Front-end Web Developer</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Patrascu Lucian">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Front-end Web Developer">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- Header -->
     <header>
-      <p id="logo">Patrascu Lucian</p>
-      <h1>Hello! I'm Luci.<br>
-        I am a progammer in front-end web development</h1>
+      <div class="container">
+        <p id="logo">Patrascu Lucian</p>
+        <h1>Hello! I'm Luci.<br>
+          I am a progammer in front-end web development</h1>
+          <div id="see-more">
+            <a href="#expertise">See more &#8675;</a>
+          </div>
+      </div>
     </header>
-    <!-- Expertise -->
-    <div id="expertise">
-      <h1>What I do</h1>
-        <p>I take a mock-up or I sketch wireframes on a pice of paper then I start coding with:</p>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-      </ul>
 
-    </div>
+    <!-- Expertise -->
+    <section id="expertise">
+      <div class="container">
+          <h1>What I do</h1>
+        <img src="img/html5.png" alt="html5 icon">
+        <img src="img/css3.png" alt="html5 icon">
+        <img src="img/js.png" alt="html5 icon">
+          <p>I take a mock-up or I sketch wireframes on a pice of paper then I start coding.</p>
+          <p>I start off with the markup of the page using HTML5. Then I add styling to the page using CSS3. After that I add some functionality with JavaScript</p>
+      </div>
+    </section>
+
     <!-- Projects/Portfolio -->
-    <div id="portfolio">
-      <h1>My projects</h1>
-    </div>
+    <section id="portfolio">
+      <div class="container">
+        <h1>My projects</h1>
+        <ul>
+          <li>
+            <h3>This Website</h3>
+            <a href="#">
+              <img src="img/projects/project1.png" alt="This Website">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <h1>Contact</h1>
+        <p>patrascu.lucian93@yahoo.com</p>
+      </div>
+    </section>
 
     <!-- Footer -->
-
-    <footer>Copyright &copy; 2018 Patrascu Lucian</footer>
-
+    <footer>
+      <div class="container">
+      Copyright &copy; 2018 Patrascu Lucian
+      </div>
+    </footer>
 
     <script type="text/javascript" src="script.js"></script>
   </body>
