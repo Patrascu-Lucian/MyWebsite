@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Front-end Web Developer">
     <meta name="keywords" content="HTML, CSS, JavaScript, front, end, web, developer, patrascu, lucian">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/ico" href="img/me.jpg"/>
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   </head>
   <body>
     <!-- Header -->
@@ -77,12 +77,26 @@
       <div class="container">
         <p><small>Copyright &copy; 2018 Patrascu Lucian</small></p>
         <a href="https://github.com/Patrascu-Lucian">
-          <i class="fab fa-github"></i>
+          <i class="fab fa-github fa-3x" aria-hidden="true"></i>
         </a>
         <a href="https://www.linkedin.com/in/lucian-patrascu-0931a5152/">
-          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
         </a>
-      </div>
+
+        <!-- Social Links Styling -->
+        <style>
+          footer a {
+            text-decoration: none;
+          }
+          .fab {
+            padding: 25px 10px 10px 0;
+            color: #7C88B4;
+          }
+          .fab:hover{
+            color: #fff;
+          }
+        </style>
+      </div><!-- container -->
     </footer>
   <script src="script.js"></script>
   </body>
