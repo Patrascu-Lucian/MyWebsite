@@ -30,8 +30,15 @@ header #logo {
   border: 5px solid #7C88B4;
   border-radius: 15px;
   color: #FFFFFF;
+  transition: all .3s ease-in-out;
   font-weight: bolder;
   padding: 10px;
+}
+
+header #logo:hover{
+border: 5px solid #5A6692;
+color: #DDD;
+background: #111;
 }
 
 header h1 {
@@ -60,12 +67,12 @@ header h1 {
 }
 
 /* ============================== Expertise ============================== */
-#expertise {
-  font-size: 125%;
-}
-
 #expertise h2 {
   border-bottom: 3px solid #7C88B4;
+}
+
+#expertise p, #expertise li{
+  text-align: left;
 }
 
 #expertise img {
@@ -74,8 +81,6 @@ header h1 {
   margin: auto;
   padding: 2vh 2vw;
 }
-
-
 
 /* ============================== Portfolio ============================== */
 
@@ -92,10 +97,10 @@ header h1 {
   border-bottom: 3px solid #7C88B4;
 }
 
-#portfolio h3, p {
+#portfolio h3, #portfolio p {
   display: block;
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 200px;
   text-align: center;
 }
 
@@ -108,8 +113,8 @@ header h1 {
 
 #portfolio li img {
   transition: opacity .3s ease-in-out;
-  width: 250px;
-  max-height: 150px;
+  width: 200px;
+  height: 100px;
   opacity: .7;
   border-radius: 10px;
 }
@@ -163,6 +168,15 @@ footer {
 
   #portfolio li img {
     width: 300px;
+    height: 150px;
+  }
+
+  #portfolio h3, #portfolio p {
+    max-width: 300px;
+  }
+
+  #expertise p, #expertise li{
+    font-size: 125%;
   }
 
 }
