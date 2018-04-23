@@ -13,27 +13,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/ico" href="img/me.jpg"/>
 
-    <!-- Social Links Styling -->
-    <style>
-      footer a {
-        text-decoration: none;
-      }
-      .fab {
-        transition: all .3s ease-in-out;
-        padding: 25px 10px 10px 0;
-        color: #7C88B4;
-      }
-      .fab:hover{
-        color: #fff;
-      }
-    </style>
-
   </head>
   <body>
     <!-- Header -->
     <header>
       <div class="container">
-        <a href="#" id="logo">patrasculucian.com</a>
+        <a href="index.html" id="logo">patrasculucian.com</a>
         <h1>Hello! I'm Luci.<br>
           I am a progammer in front-end web development</h1>
           <div id="see-more">
@@ -45,10 +30,12 @@
     <!-- Expertise -->
     <section id="expertise">
       <div class="container">
-          <h2>What I do</h2>
-        <img src="img/html5.png" alt="html5 icon">
-        <img src="img/css3.png" alt="html5 icon">
-        <img src="img/js.png" alt="html5 icon">
+        <h2>What I do</h2>
+        <div class="img-container">
+          <img src="img/html5.png" alt="html5 icon">
+          <img src="img/css3.png" alt="html5 icon">
+          <img src="img/js.png" alt="html5 icon">
+        </div>
 
         <p>I take an existing website mockup or I sketch wireframes on a pice of paper, then I start coding:</p>
         <ul>
@@ -66,11 +53,11 @@
         <h2>My projects</h2>
         <ul>
           <li>
-            <h3>This Website</h3>
-            <a href="#">
+            <h3>This site</h3>
+            <a href="index.html">
               <img src="img/projects/project1.png" alt="This Website">
             </a>
-            <p>patrasculucian.com, the first website that I ever created. Using HTML5, CSS3 and a bit of javascript</p>
+            <p>The first webpage that I ever created, patrasculucian.com. My landing page</p>
           </li>
 
           <li>
@@ -78,7 +65,15 @@
             <a href="https://patrasculucian.com/artsite">
               <img src="img/projects/project2.png" alt="An art website">
             </a>
-            <p>Using: HTML5, CSS3, Sass, Bootstrap 4, JQuery, Gulp</p>
+            <p>Experimenting with: Sass, Bootstrap 4, JQuery, npm, Gulp</p>
+          </li>
+
+          <li>
+            <h3>A movie webapp</h3>
+            <a href="https://patrasculucian.com/moviesite">
+              <img src="img/projects/project3.png" alt="A movie webapp">
+            </a>
+            <p>Working with OMDB API and IMDb id's by making AJAX(JSON) calls using vanilla JS</p>
           </li>
         </ul>
       </div>

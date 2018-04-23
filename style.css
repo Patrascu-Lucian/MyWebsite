@@ -1,7 +1,7 @@
 /* ============================== Global ============================== */
 body {
   margin: 0;
-  font: 100%/1.5 Arial, Verdana, Helvetica, sans-serif, "Times New Roman";
+  font: 100%/1.7 Arial, Verdana, Helvetica, sans-serif, "Times New Roman";
   background: #e5e5e5;
 }
 
@@ -82,19 +82,34 @@ header h1 {
 }
 
 /* ============================== Expertise ============================== */
+#expertise {
+  margin-bottom: 40px;
+}
+
 #expertise h2 {
   border-bottom: 3px solid #7C88B4;
 }
 
 #expertise p, #expertise li{
   text-align: left;
+  display: block;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 #expertise img {
   display: inline-block;
-  max-width: 15vw;
-  margin: auto;
-  padding: 2vh 2vw;
+  width: 30%;
+  max-width: 150px;
+}
+
+#expertise img:not(:last-child) {
+  margin-right: 2vw;
+}
+
+.img-container{
+  margin: 20px auto;
+  max-width: 900px;
 }
 
 /* ============================== Portfolio ============================== */
@@ -104,10 +119,6 @@ header h1 {
   color: white;
 }
 
-#portfolio ul {
-  width: 100%;
-}
-
 #portfolio h2 {
   border-bottom: 3px solid #7C88B4;
 }
@@ -115,7 +126,7 @@ header h1 {
 #portfolio h3, #portfolio p {
   display: block;
   margin: 0 auto;
-  max-width: 70vw;
+  width: 300px;
   text-align: center;
 }
 
@@ -123,14 +134,16 @@ header h1 {
   display: inline-block;
   list-style: none;
   padding: 15px;
-  vertical-align: top;
+  vertical-align: top;  
 }
 
 #portfolio li img {
   transition: all .3s ease-in-out;
-  max-width: 70vw;
+  width: 300px;
   opacity: .7;
-  border-radius: 10px;
+  border: 2px solid #7C88B4;
+  border-radius: 2px;
+  box-shadow: 0 5px 10px rgba(0,0,0, .6);
 }
 
 #portfolio li img:hover {
@@ -160,7 +173,20 @@ footer {
   padding: 50px 0;
 }
 
-/* ============================== Media query ==============================*/
+/* =========================== Social Links Styling ==========================*/
+footer a {
+  text-decoration: none;
+}
+.fab {
+  transition: all .3s ease-in-out;
+  padding: 25px 10px 10px 0;
+  color: #7C88B4;
+}
+.fab:hover{
+  color: #fff;
+}
+
+/* ============================== Media queries ==============================*/
 @media (min-width: 768px) {
 
   header h1 {
@@ -183,4 +209,11 @@ footer {
     font-size: 125%;
   }
 
+}
+
+@media (min-width: 1400px){
+  html{
+
+    font-size: 110%;
+  }
 }
