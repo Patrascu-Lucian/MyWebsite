@@ -104,7 +104,7 @@ header h1 {
 }
 
 #expertise img:not(:last-child) {
-  margin-right: 2vw;
+  margin-right: 20px;
 }
 
 .img-container{
@@ -206,14 +206,13 @@ footer a {
   }
 
   #expertise p, #expertise li{
-    font-size: 125%;
+    font-size: 100%;
   }
 
 }
 
 @media (min-width: 1400px){
   html{
-
-    font-size: 110%;
+    font-size: 125%;
   }
 }
