@@ -95,6 +95,7 @@ header h1 {
   display: block;
   margin: 0 auto;
   max-width: 900px;
+  padding: 0 15px;
 }
 
 #expertise img {
@@ -197,14 +198,6 @@ footer a {
     font-size: 175%;
   }
 
-  #portfolio li img {
-    max-width: 50vh;
-  }
-
-  #portfolio h3, #portfolio p {
-    max-width: 50vh;
-  }
-
   #expertise p, #expertise li{
     font-size: 100%;
   }
@@ -214,5 +207,16 @@ footer a {
 @media (min-width: 1400px){
   html{
     font-size: 125%;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .container {
+    width: 95vw;
+  }
+
+  #portfolio h3, #portfolio p , #portfolio li img{
+    width: 250px;
   }
 }
