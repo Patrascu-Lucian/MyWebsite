@@ -23,5 +23,5 @@ function animate(elem, style, unit, from, to, time, prop) {
 
 function smoothScroll(theID) {
     var target = document.getElementById(theID);
-    animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop, 1000, true);
+    animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop, 500, true);
 };

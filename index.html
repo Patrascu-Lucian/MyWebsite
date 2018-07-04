@@ -1,37 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Patrascu Lucian | Front-end Web Developer</title>
-    <meta charset="utf-8">
-    <meta name="author" content="Patrascu Lucian">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="front, end, web, developer, patrascu, lucian, HTML, CSS, JavaScript">
-    <meta name="description" content="A self-taught developer specialized in front-end web development">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link rel="canonical" href="https://patrasculucian.com">
-    <link href="img/me.jpg" rel="shortcut icon" type="image/png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/ico" href="img/me.jpg"/>
 
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <div class="container">
-        <a href="index.html" id="logo">patrasculucian.com</a>
-        <h1>Hello! I'm Luci.<br>
-          I am a progammer in front-end web development</h1>
-          <div id="see-more">
-            <a href="#expertise" onclick="smoothScroll('expertise'); return false;">See more &darr;</a>
-          </div>
+<head>
+  <title>Patrascu Lucian | Front-end Web Developer</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Patrascu Lucian">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="front, end, web, developer, patrascu, lucian, HTML, CSS, JavaScript">
+  <meta name="description" content="A self-taught developer specialized in front-end web development">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="canonical" href="https://patrasculucian.com">
+  <link href="img/me.jpg" rel="shortcut icon" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/ico" href="img/me.jpg" />
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" id="logo">patrasculucian.com</a>
+      <h1>Hello! I'm Luci.
+        <br> I am a progammer in front-end web development</h1>
+      <div id="see-more">
+        <a href="#expertise" onclick="smoothScroll('expertise'); return false;">See more &darr;</a>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Expertise -->
+  <!-- Expertise -->
+  <div class="container">
     <section id="expertise">
-      <div class="container">
-        <h2>What I do</h2>
-        <div class="img-container">
+
+      <h2>My expertise</h2>
+
+      <div class="expertise__container">
+        <div class="expertise__item">
+          <i class="fas fa-mobile-alt expertise__img" aria-hidden="true"></i>
+          <h4 class="expertise__header">Responsive Design</h4>
+          <ul class="expertise__body">
+            <li>- Fluid layouts</li>
+            <li>- Media queries</li>
+            <li>- Responsive images</li>
+            <li>- Correct units usage</li>
+          </ul>
+        </div>
+
+        <div class="expertise__item">
+          <i class="fas fa-code expertise__img" aria-hidden="true"></i>
+          <h4 class="expertise__header">Maintainable &amp; Scalable Code</h4>
+          <ul class="expertise__body">
+            <li>- Clean</li>
+            <li>- Easy to understand</li>
+            <li>- Reusable</li>
+            <li>- Organized files</li>
+          </ul>
+        </div>
+
+        <div class="expertise__item">
+          <i class="fas fa-globe expertise__img" aria-hidden="true"></i>
+          <h4 class="expertise__header">Web Performance</h4>
+          <ul class="expertise__body">
+            <li>- Less HTTP Requests</li>
+            <li>- Less code</li>
+            <li>- Compressed code</li>
+            <li>- Compressed images</li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+
+  </div>
+
+  <!-- <div class="img-container">
           <img src="img/html5.png" alt="html5 icon">
           <img src="img/css3.png" alt="html5 icon">
           <img src="img/js.png" alt="html5 icon">
@@ -44,70 +86,74 @@
           <li>- Add functionality with a bit of JavaScript</li>
         </ul>
         <p>The result will be a fully responsive website</p>
-      </div>
-    </section>
+      </div> -->
+  </section>
 
-    <!-- Projects/Portfolio -->
-    <section id="portfolio">
-      <div class="container">
-        <h2>My projects</h2>
-        <ul>
-          <li>
-            <h3>This site</h3>
-            <a href="index.html">
-              <img src="img/projects/project1.png" alt="This Website">
-            </a>
-            <p>The first webpage that I ever created, patrasculucian.com. My landing page</p>
-          </li>
+  <!-- Projects/Portfolio -->
+  <section id="portfolio">
+    <div class="container">
+      <h2>Personal projects</h2>
+      <ul>
+        <li>
+          <h3>This site</h3>
+          <a href="index.html">
+            <img src="img/projects/project1.png" alt="This Website">
+          </a>
+          <p>The first webpage that I ever created, patrasculucian.com, my website.</p>
+        </li>
 
-          <li>
-            <h3>An art website</h3>
-            <a href="https://patrasculucian.com/artsite">
-              <img src="img/projects/project2.png" alt="An art website">
-            </a>
-            <p>Experimenting with: Sass, Bootstrap 4, JQuery, npm, Gulp</p>
-          </li>
+        <li>
+          <h3>An art website</h3>
+          <a href="https://patrasculucian.com/artsite">
+            <img src="img/projects/project2.png" alt="An art website">
+          </a>
+          <p>A multipage website with a panoramic menu.</p>
+        </li>
 
-          <li>
-            <h3>A movie webapp</h3>
-            <a href="https://patrasculucian.com/movieapp">
-              <img src="img/projects/project3.png" alt="A movie webapp">
-            </a>
-            <p>Working with a movie database API (from OMDB and using IMDb id's), making AJAX(JSON) calls using vanilla JS</p>
-          </li>
+        <li>
+          <h3>A movie app</h3>
+          <a href="https://patrasculucian.com/movieapp">
+            <img src="img/projects/project3.png" alt="A movie webapp">
+          </a>
+          <p>I made this application using only HTML, CSS (Sass) and vanilla JS. Give it a try and search for any movie.</p>
+        </li>
 
-          <li>
-            <h3>A ToDo-List app</h3>
-            <a href="https://patrasculucian.com/todolist">
-              <img src="img/projects/project4.png" alt="A ToDo-List App">
-            </a>
-            <p>This app stores data in the user's local storage</p>
-          </li>
-        </ul>
-      </div>
-    </section>
+        <li>
+          <h3>A ToDo-List app</h3>
+          <a href="https://patrasculucian.com/todolist">
+            <img src="img/projects/project4.png" alt="A ToDo-List App">
+          </a>
+          <p>This todo app stores data in the user's local storage.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>patrascu.lucian93@yahoo.com</p>
-      </div>
-    </section>
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>patrascu.lucian93@yahoo.com</p>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p><small>Copyright &copy; 2018 Patrascu Lucian</small></p>
-        <a href="https://github.com/Patrascu-Lucian">
-          <i class="fab fa-github fa-3x" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/lucian-patrascu-0931a5152/">
-          <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
-        </a>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>
+        <small>Copyright &copy; 2018 Patrascu Lucian</small>
+      </p>
+      <a href="https://github.com/Patrascu-Lucian">
+        <i class="fab fa-github fa-3x footer__link" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/lucian-patrascu-0931a5152/">
+        <i class="fab fa-linkedin fa-3x footer__link" aria-hidden="true"></i>
+      </a>
 
-      </div><!-- container -->
-    </footer>
+    </div>
+    <!-- container -->
+  </footer>
   <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
